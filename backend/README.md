@@ -1,1 +1,1 @@
-developing using MERN
+Backend development using javascript
