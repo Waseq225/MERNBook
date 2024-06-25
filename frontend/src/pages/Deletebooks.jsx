@@ -1,10 +1,10 @@
 import { useState } from "react"
 import axios from 'axios'
 import { useNavigate, useParams } from "react-router-dom"
-import Spinner from "../components/spinner.jsx"
-import BackButton from "../components/backButton.jsx"
+import { Spinner } from "../components/spinner.jsx"
+import { BackButton } from "../components/backButton.jsx"
 
-const Deletebooks = () => {
+export const Deletebooks = () => {
     const [loading, setLoading] = useState(false);
     const { id } = useParams();
     const navigate = useNavigate()
@@ -40,5 +40,3 @@ const Deletebooks = () => {
         </div>
     )
 }
-
-export default Deletebooks

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { BsArrowLeft } from "react-icons/bs"
 
-export const backButton = ({ destination = '/' }) => {
+export const BackButton = ({ destination = '/' }) => {
     return (
         <div className="flex">
             <Link
@@ -12,5 +12,3 @@ export const backButton = ({ destination = '/' }) => {
         </div>
     )
 }
-
-export default backButton

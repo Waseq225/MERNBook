@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import axios from 'axios'
 import { useNavigate, useParams } from "react-router-dom"
-import Spinner from "../components/spinner.jsx"
-import BackButton from "../components/backButton.jsx"
+import { Spinner } from "../components/spinner.jsx"
+import { BackButton } from "../components/backButton.jsx"
 
 
 export const Updatebooks = () => {
@@ -89,5 +89,3 @@ export const Updatebooks = () => {
         </div>
     )
 }
-
-export default Updatebooks

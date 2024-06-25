@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
 import axios from 'axios'
 import { useParams } from "react-router-dom"
-import Spinner from "../components/spinner.jsx"
+import { Spinner } from "../components/spinner.jsx"
+import { BackButton } from "../components/backButton.jsx"
+
 
 export const Showbooks = () => {
     const [book, setBook] = useState({});
@@ -25,7 +27,7 @@ export const Showbooks = () => {
     )
     return (
         <div className="p-4">
-            <backButton />
+            <BackButton />
             <h1 className="text-3xl my-4">Show Book</h1>
             {loading ? (
                 <Spinner />
@@ -61,4 +63,3 @@ export const Showbooks = () => {
         </div>
     )
 }
-export default Showbooks

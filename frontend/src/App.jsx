@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
+import { Home } from './pages/Home'
 import { Createbooks } from './pages/Createbooks'
-import Deletebooks from './pages/Deletebooks'
-import Updatebooks from './pages/Updatebooks'
-import Showbooks from './pages/Showbooks'
+import { Deletebooks } from './pages/Deletebooks'
+import { Updatebooks } from './pages/Updatebooks'
+import { Showbooks } from './pages/Showbooks'
 
 export const App = () => {
   return (
@@ -16,5 +16,3 @@ export const App = () => {
     </Routes>
   )
 }
-
-export default App
