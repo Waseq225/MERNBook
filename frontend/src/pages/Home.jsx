@@ -16,7 +16,6 @@ export const Home = () => {
             .get('http://localhost:5555/books')
             .then((response) => {
                 setBooks(response.data.data);
-                console.log(response.data.data)
                 setLoading(false);
             })
             .catch((error) => {
